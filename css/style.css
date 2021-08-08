@@ -39,6 +39,12 @@ body {
      font-family: 'Roboto', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
+     overflow-y: scroll; /* Add the ability to scroll */
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */  
+}
+body::-webkit-scrollbar {
+     display: none;
 }
 
 a {
