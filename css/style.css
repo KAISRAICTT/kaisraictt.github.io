@@ -716,6 +716,29 @@ button {
      color: #0c0f38;
 }
 
+.css-famcce {
+     position: relative;
+     margin: auto;
+ }
 
+ .css-famcce section {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     width: 100%;
+}
+
+.container-fluid {
+     width: 100%;
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-right: auto;
+     margin-left: auto;
+}
 /** end footer **/
 
