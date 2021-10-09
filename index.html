@@ -43,9 +43,9 @@
       <!-- header -->
       <header>
          <!-- header inner -->
-         <div style="background-color: rgb(181, 220, 235);" class="notification">
+         <!-- <div style="background-color: rgb(181, 220, 235);" class="notification">
             <h1 style="color: rgba(0, 0, 0, 0.973); font-size: x-large; font-weight: bold; padding-top: 5px; justify-content: space-evenly;"><center><img style="height: 45px; width: 45px;" src="images/development_symb.png"/>Xeldorado NFT Exchange Is Currently Under Development!</center></h1>
-         </div>
+         </div> -->
          <div  class="header">
             <div class="container">
                <div class="row">
@@ -72,13 +72,13 @@
                                  <a class="nav-link" href="#demo">Demo Video</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#nftstack">NFT Stack</a>
+                                 <a class="nav-link" href="#nftStake">NFT Stake</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#features">Features</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#blockchains">Blockchains and Fees</a>
+                                 <a class="nav-link" href="#blockchains">Fees</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#contact">Contact</a>
@@ -100,10 +100,12 @@
                <div class="row d_flex">
                   <div class="col-md-5">
                      <div class="text-bg">
-                        <h1>The NFT Exchange</h1>
+                        <h1>The DeFi NFT Exchange</h1>
                         <span>We use a special type of smart contract that offers liquidity to the NFT space.<br><br></span>
-                        <h2 style="color:white;">Want to know about how this NFT Stack works?<br><br></h2>
-                        <a href="#nftstack">Click Here</a><br/><br/><br/>
+                        <h2 style="color:white;">Whitepaper coming soon!<br><br></h2>
+                        <h2 style="color:white;">Want to know how this NFT Stake works?<br><br></h2>
+                        <a href="#nftStake">Click Here</a>&emsp;
+                        <a href="https://github.com/RonnieGandhi/XeldoradoContractsV1">Source Code</a><br/><br/>
                         <p>Built by people from &nbsp;<img src="images/iitrlogo.svg"></p>
                      </div>
                   </div>
@@ -129,36 +131,42 @@
       </div>
       <!-- end dekmo Video -->
       <!-- Hosting -->
-      <div id="nftstack" class="hosting">
+      <div id="nftStake" class="hosting">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>How does NFT Stack work?</h2>
+                     <h2>How does NFT Stake work?</h2>
                   </div>
                </div>
             </div>
             <div class="row">
-               <h1 style="font-weight:bold;">1. Creators generate their digital artwork<h1>
+               <h1 style="font-weight:bold;">1. Creators generate their digital artwork.<h1>
                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/artist.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">2. Creators mint limited edition copies of their digital art. Let say 500 copies.</h1>
-               <img style="display: block; margin-left: auto; margin-right: auto;" src="images/mintingLENFT_v1.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">3. Limited Edition copies of NFT are inserted into same number of stacks. At anytime every copy of stack will be identical.</h1>
-               <img style="display: block; margin-left: auto; margin-right: auto;" src="images/NFTtoStack_v1.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">4. Creator lists these stack copies on exchange under their Creator Account, giving Initial Stack Offering just like an IPO. </h1><br/>
-               <h1 style="font-weight:bold;">5. This allows trading of stacks similar to stocks. Upon buying a stack, the onwership of underlying NFT copies in the stack will transfer to the buyer.</h1>
-               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/buyandsellstacks_wc_v1.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">6. Creator receives a small royalty as a token of appreciation upon each transaction (0.05%).</h1>
+               <h1 style="font-weight:bold;">2. Creator mint NFT out of his artwork and add it to his creator vault. Creator can also add already minted NFTs.</h1>
+               <img style="display: block; margin-left: auto; margin-right: auto;" src="images/mintingLENFT_v2.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">3. Vault issues ERC20 creator tokens against the NFT. 118888 tokens are issued when a given creator's vault is created. Vault doesn't allow minting of new tokens hence as and when new NFTs are added the price of individual token should go up in a long run by design.</h1>
+               <img style="display: block; margin-left: auto; margin-right: auto;" src="images/vaultToken.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">4. By default 76% of Creator Tokens are minted to vault address and rest 24% to creator addess. Creator can start the Initial Creator Token Offering anytime after the vault is created with specified minimum price and ERC20 base token like WETH, USDC, USDT, etc. This offering is for specified time.  </h1><br/>
+               <img style="display: block; margin-left: auto; margin-right: auto;" src="images/creatorTokenDist.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">5. Maximum of 38% of creator tokens are allowed to be bought from the vault under the initial creator token offering. Buyers buy creator tokens directly from the creator's vault contract by paying the base token, at or above the minimum price, to the vault. It is first come first serve basis.</h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/ICTO.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">6. After the offering closes, creator tokens from the vault, as much amount as sold in the offering, are used to create liquidity pools along with all the base tokens received. Initially vault owned 76% of creator tokens, suppose 32% of these tokens are sold then to match this 32% another 32% from the vault is sent to the liquidity pool, leaving 12% in vault, and since 32% of creator tokens are worth all the base tokens received hence all base tokens are sent to the liquidity pool to create a trading pair for this creator. </h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/liquidityPoolFill.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">7. Creator tokens left in the vault, 12% in this case, are sent to the creator address</h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/returnLeftOverTokens.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">8. Now that creator's liquidity pools are ready, trading between creator token and base token can happen. Since we have as much liquidity in pool (32% in above case) as much creator tokens bought (32% in above case), it is a self-sufficient scenario for trading to begin.</h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/marketCreation.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">9. If pool contains 500 WETH and 50000 Creator Token, then quote price of creator token is 0.01 WETH currently. Price of last Creator Token left in the pool, in case all creator tokens are swapped against WETH, will be 25000000 WETH and if selling of creator token continues then price of last creator token added will be 0.00000004WETH. Basic Idea of Automated Market Making. </h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" width="50%" height="50%" src="images/buyct.png" alt="#"/><br/><br/>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" width="50%" height="50%" src="images/sellct.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">10. Owner of creator token can redeem NFT from vault against proportionate amount of tokens. Suppose there are 100 NFTs in vault and someone owns 1% of all tokens of a creator, he can get one NFT and corresponding tokens will be transfered to the creator.</h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/redeem.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">11. Creato can add new many NFTs to vault. The more the NFTs in vault, the lesser tokens required to redeem an NFT. This also ensures that in longer range of time same number of tokens can buy more NFT hence a pontential price rise for the token in future.</h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/mintingLENFT_v3.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">12. Creator gets royalty fee(0.05%) upon each swap from the pool which creator can change as per convenience. Small incentives motivates creator to continue adding more NFTs to vault.</h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/royalty.jpg" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">7. Creator  creates new Artwork, it will get added to every stack on our exchange automatically.</h1>
-               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/newNFTtoStack_v1.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">8. The new Artwork copies added to the stacks offer potential price of the stack to go up or down depending on whether the new Artwork is a value add.</h1>
-               <img  style="display: block; margin-left: auto; margin-right: auto;" width="50%" height="50%" src="images/stock-price_va.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">9. New Artwork copies will be reflected in all the stacks of that creator on our exchange offering complete ease of trading.</h1>
-               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/buyandsellstacks_afternewadd_wc_v1.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">10. Investors holding positions in stacks of creators will automatically get the ownership of this new Artwork copy. This allows investor to invest not just in the Digital Artwork but the Artist/Creator itself by judging the future potential of the creator.</h1>
-               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/investment.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">11. Unlike other marketplaces, here every creator will have only 1 collectible, the stack of creator, but there can be potentially infinite Artworks associated with it. Multiple but limited number of copies of this stack provides ease of trading and the required liquidity.</h1>
+               <h1 style="font-weight:bold;">13. Creator can liquidate only 2% of creator token in a month to ensure trust and stability of creator token's lquidity pool.</h1>
             </div>
          </div>
       </div>
@@ -178,23 +186,25 @@
                   <div class="Services-box">
                      <i><img width="70%" height="75%" src="images/coins.png" alt="#" /></i>
                      <h3>Value for Creators</h3>
-                     <p>Initial Stack offering (ISO) allows creators to gain value by selling their stacks to buyers on our exchange.</p>
+                     <p>Initial Creator Token Offering (ICTO) allows creators to get realistic valuation with high liquidity by selling their Stakes to buyers on our exchange.</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Services-box">
                      <i><img height="150%" width="150%" src="images/trust.png" alt="#" /></i>
                      <h3>Trustable for Investors</h3>
-                     <p>Lock In period prevents stacks from being sold immediately by the Creator after ISO when the stack prices may be artificially high and take away economic motivations from Creator to continue.</p>
+                     <p>Lock In period prevents tokens from being sold immediately by the Creator after ICTO when the token prices may be artificially high.</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Services-box">
                      <i><img width="85%" height="100%" src="images/incentives.png" alt="#" /></i>
                      <h3>Incentive for Creators</h3>
-                     <p>Royalty fee paid to creator for each transaction and potential increase in the price of individual stacks over time, gives incentives for Creators to continue adding new Artworks.</p>
+                     <p>Royalty fee paid to creator for each transaction and potential increase in the price of token, motivates creator to continue adding new NFTs.</p>
                   </div>
                </div>
+            </div>
+            <div class="row"  style="justify-content:center;">
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Services-box">
                      <i><img width="65%" height="65%" src="images/promotion.png" alt="#" /></i>
@@ -202,18 +212,18 @@
                      <p>An inbuilt social platform allows Creators to interact with the community and create new trends.</p>
                   </div>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+               <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Services-box">
                      <i><img width="60%" height="75%" src="images/proof-of-stake.png" alt="#" /></i>
                      <h3>Proof of Stake Qualification</h3>
-                     <p>Only Creators having significant history with the number of recurring trades of their minted NFT will be allowed to list for ISO.</p>
+                     <p>As we proceed only creators whose ICTO is atleast 5% subscribed will be allowed to continue further.</p>
                   </div>
-               </div>
+               </div> -->
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Services-box">
                      <i><img width="65%" height="75%"src="images/wallet.jpg" alt="#" /></i>
                      <h3>Wallets</h3>
-                     <p>Support of multiple wallets to connect account and trade in decentralised manner will help operate in trustless manner.</p>
+                     <p>Support of multiple wallets to connect account and trade in decentralised manner with smart contract as intermediary.</p>
                   </div>
                </div>
             </div>
@@ -233,6 +243,16 @@
                </div>
             </div>
             <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="align-self:center;">
+                  <a href="https://ethgasstation.info/" alt="" target="_blank">
+                     <div class="why-box">
+                        <i><img height="55" width="55" src="images/ether.png" alt="#" /></i>
+                        <h3>Ethereum</h3>
+                        <!--<p>Account Opening fees: <br/> NFT minting (Gas) fees: <br/></p>-->
+                     </div>
+                     <!-- <a class="read_more bg" href="#">Read More</a> -->
+                  </a>
+               </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <a href="https://www.polygongasstation.com/" alt="" target="_blank">
                      <div class="why-box">
@@ -243,21 +263,21 @@
                   </a>
                   <!-- <a class="read_more bg" href="#">Read More</a> -->
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                  <a href="https://docs.onflow.org/flow-token/concepts/" alt="#" target="_blank">
+               <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <a href="https://docs.avax.network/learn/platform-overview/transaction-fees" alt="#" target="_blank">
                      <div id="box_ho" class="why-box">
                         <i><img height="80" width="80" src="images/flow.jpeg" alt="#" /></i>
-                        <h3>Flow</h3>
-                        <!--<p>Account Opening fees: <br/> NFT minting (Gas) fees: <br/></p>-->
+                        <h3>Avalanche</h3>
+                        <p>Account Opening fees: <br/> NFT minting (Gas) fees: <br/></p>
                      </div>
-                     <!-- <a class="read_more bg" href="#">Read More</a> -->
+                     <a class="read_more bg" href="#">Read More</a>
                   </a>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="align-self:center;">
-                  <a href="https://solana.com/" alt="" target="_blank">
-                     <div class="why-box">
-                        <i><img height="80" width="80" src="images/solana.png" alt="#" /></i>
-                        <h3>Solana</h3>
+               </div> --> 
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <a href="https://bscscan.com/gastracker" alt="#" target="_blank">
+                     <div id="box_ho" class="why-box">
+                        <i><img height="80" width="80" src="images/binanceLogo.png" alt="#" /></i>
+                        <h3>Binance Smart Chain</h3>
                         <!--<p>Account Opening fees: <br/> NFT minting (Gas) fees: <br/></p>-->
                      </div>
                      <!-- <a class="read_more bg" href="#">Read More</a> -->
@@ -268,8 +288,8 @@
                <div class="col-md-12">
                   <div class="titlepage"><br/><br/>
                      <h2>Exchange fees</h2>
-                     <h1>We only charge when you buy or sell. Our fee is 1% of the transaction cost.</h1>
-                     <p>All other minting and transactions related charges will be deducted for dealing with the blockchains and no extra charge will be deducted from our end.</p>
+                     <h1>We only charge when you buy or sell. Our fee is 0.5% of base token in transaction. This helps us support the future development of Xeldorado protocol and our social platform.</h1>
+                     <p>All other minting and transactions related charges will be deducted for dealing with the blockchain. No extra charge will be deducted from our end.</p>
                   </div>
                </div>
             </div>
