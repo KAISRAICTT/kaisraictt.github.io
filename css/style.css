@@ -34,7 +34,7 @@ html {
 }
 
 body {
-     color: #666666;
+     color: #f7e7e7;
      font-size: 14px;
      font-family: 'Roboto', sans-serif;
      line-height: 1.80857;
@@ -83,7 +83,7 @@ h1 {
      font-weight: 600;
      line-height: 1.15;
      background-image: linear-gradient(
- 255deg,#b6509e 25%,#2ebac6);
+ 255deg,#75fff8 25%,#00df4a);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
      -webkit-text-stroke-width: .4px;
@@ -317,9 +317,10 @@ button {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header {
-     background: #0c0f38;
+     background: black;
      width: 100%;
-     padding: 40px 40px 40px 40px;
+     height: 10%;
+     padding: 20px 20px 20px 20px;
 }
 
 .logo a {
@@ -327,36 +328,39 @@ button {
      font-weight: bold;
      text-transform: uppercase;
      color: #fff;
-     line-height: 40px;
+     line-height: 8%;
 }
 
 .banner_main {
-     background: #0c0f38;
-     background-size: 100% 100%;
+     /* background: #0c0f38; */
+     background-image: url('../images/cryptoBack3.gif');
+     background-color: #cccccc;
+     background-size: cover;
      background-repeat: no-repeat;
-     padding-bottom: 90px;
+     background-position: center center; 
+     padding-bottom: 2%;
 }
 
 .text-bg h1 {
      color: #fff;
      font-size: 60px;
      line-height: 80px;
-     padding-bottom: 25px;
+     /* padding-bottom: 25px; */
      font-weight: bold;
 }
 
-.text-bg span {
+/* .text-bg span {
      color: #fdd430;
      font-size: 40px;
      line-height: 35px;
      font-weight: bold;
-}
+} */
 
 .text-bg p {
      color: #fff;
      font-size: 17px;
-     line-height: 28px;
-     padding: 40px 0;
+     line-height: 5%;
+     /* padding: 40px 0; */
 }
 
 .text-bg a {
