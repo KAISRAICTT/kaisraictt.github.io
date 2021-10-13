@@ -339,11 +339,12 @@ button {
      background-repeat: no-repeat;
      background-position: center center; 
      padding-bottom: 2%;
+     padding-top: 18%;
 }
 
 .text-bg h1 {
      color: #fff;
-     font-size: 60px;
+     font-size: 80px;
      line-height: 80px;
      /* padding-bottom: 25px; */
      font-weight: bold;
