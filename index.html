@@ -104,7 +104,7 @@
                         <h1 class="GradientText">Decentralised Exchange For Trading NFT Backed Creator Tokens</h1><br/><br/>
                         <!-- <h3 style="color:white;">&#8227;  Open Source and Non Custodial<br></hr> -->
                         <!-- <h3 style="color:white;">&#8227;  Self-sufficient liquidity pools to swap creator tokens<br/><br/></hr> -->
-                        <h2 style="color:white;"><b>Want to know how this NFT Stake works?</b><br/><br/><br/></h2>
+                        <h2 style="color:white;"><b>Want to know how Xeldorado Protocol works?</b><br/><br/><br/></h2>
                         <a href="#nftStake">Understand</a>&emsp;
                         <a href="https://github.com/RonnieGandhi/XeldoradoContractsV1">Code</a><br/><br/><br/>
                         <h3 style="color:rgb(41, 248, 103);">Currently supported on Polygon (MATIC) network<br></h2>
@@ -142,7 +142,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>How does NFT Stake work?</h2>
+                     <h2>How does Xeldorado Protocol work?</h2>
                   </div>
                </div>
             </div>
@@ -151,28 +151,32 @@
                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/artist.png" alt="#"/><br/><br/>
                <h1 style="font-weight:bold;">2. Creator mint NFT out of his artwork and add it to his creator vault. Creator can also add already minted NFTs.</h1>
                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/mintingLENFT_v2.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">3. Vault issues ERC20 creator tokens against the NFT. 118888 tokens are issued when a given creator's vault is created. Vault doesn't allow minting of new tokens hence as and when new NFTs are added the price of individual token should go up in a long run by design.</h1>
+               <h1 style="font-weight:bold;">3. Vault issues ERC20 creator tokens against the NFT. 1111888 tokens are issued when a given creator's vault is created.</h1>
                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/vaultToken.png" alt="#"/><br/><br/>
                <h1 style="font-weight:bold;">4. By default 76% of Creator Tokens are minted to vault address and rest 24% to creator addess. Creator can start the Initial Creator Token Offering anytime after the vault is created with specified minimum price and ERC20 base token like WETH, USDC, USDT, etc. This offering is for specified time.  </h1><br/>
                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/creatorTokenDist.png" alt="#"/><br/><br/>
                <h1 style="font-weight:bold;">5. Maximum of 38% of creator tokens are allowed to be bought from the vault under the initial creator token offering. Buyers buy creator tokens directly from the creator's vault contract by paying the base token, at or above the minimum price, to the vault. It is first come first serve basis.</h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/ICTO.png" alt="#"/><br/><br/>
                <h1 style="font-weight:bold;">6. After the offering closes, creator tokens from the vault, as much amount as sold in the offering, are used to create liquidity pools along with all the base tokens received. Initially vault owned 76% of creator tokens, suppose 32% of these tokens are sold then to match this 32% another 32% from the vault is sent to the liquidity pool, leaving 12% in vault, and since 32% of creator tokens are worth all the base tokens received hence all base tokens are sent to the liquidity pool to create a trading pair for this creator. </h1>
-               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/liquidityPoolFill.png" alt="#"/><br/><br/>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/liquidityPoolFill.png" alt="#"/><br/><br/><br/><br/><br/>
                <h1 style="font-weight:bold;">7. Creator tokens left in the vault, 12% in this case, are sent to the creator address</h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/returnLeftOverTokens.png" alt="#"/><br/><br/>
                <h1 style="font-weight:bold;">8. Now that creator's liquidity pools are ready, trading between creator token and base token can happen. Since we have as much liquidity in pool (32% in above case) as much creator tokens bought (32% in above case), it is a self-sufficient scenario for trading to begin.</h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/marketCreation.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">9. If pool contains 500 WETH and 50000 Creator Token, then quote price of creator token is 0.01 WETH currently. Price of last Creator Token left in the pool, in case all creator tokens are swapped against WETH, will be 25000000 WETH and if selling of creator token continues then price of last creator token added will be 0.00000004WETH. Basic Idea of Automated Market Making. </h1>
+               <h1 style="font-weight:bold;">9. If pool contains 500 WETH and 50000 Creator Token, then quote price of creator token is 0.01 WETH currently. Price of last Creator Token left in the pool, in case all creator tokens are swapped against WETH, will be 25000000 WETH and if selling of creator token continues then price of last creator token added will be 0.00000004WETH. This is the basic idea of Automated Market Making. </h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" width="50%" height="50%" src="images/buyct.png" alt="#"/><br/><br/>
                <img  style="display: block; margin-left: auto; margin-right: auto;" width="50%" height="50%" src="images/sellct.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">10. Owner of creator token can redeem NFT from vault against proportionate amount of tokens. Suppose there are 100 NFTs in vault and someone owns 1% of all tokens of a creator, he can get one NFT and corresponding tokens will be transfered to the creator.</h1>
+               <h1 style="font-weight:bold;">10. Owner of creator token can redeem NFT from vault against proportionate amount of tokens. Suppose there are 100 NFTs in vault and someone owns 1% of all tokens of a creator, he can get one NFT and corresponding tokens will be burnt.</h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/redeem.png" alt="#"/><br/><br/>
                <h1 style="font-weight:bold;">11. Creator can add new many NFTs to vault. The more the NFTs in vault, the lesser tokens required to redeem an NFT. This also ensures that in long term, same number of tokens can buy more NFT hence a pontential price rise for the token in future.</h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/mintingLENFT_v3.png" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">12. Creator gets royalty fee(0.05%) upon each swap from the pool which creator can change as per convenience. Small incentives motivates creator to continue adding more NFTs to vault.</h1>
+               <h1 style="font-weight:bold;">12. If the owner returns his NFT back, tokens equal to price of 1 NFT, at that time, are minted to his account.</h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/returnNFT.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">13. If NFTs are added by creator between redeem and return event then more tokens will be burnt, upon redeem, and lesser tokens will be minted upon return since price of 1 NFT has dropped. Hence making tokens deflationary in nature.</h1>
+               <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/defaltion.png" alt="#"/><br/><br/>
+               <h1 style="font-weight:bold;">14. Creator gets royalty fee(0.05%) upon each swap from the pool which creator can change as per convenience. Small incentives motivates creator to continue adding more NFTs to vault.</h1>
                <img  style="display: block; margin-left: auto; margin-right: auto;" src="images/royalty.jpg" alt="#"/><br/><br/>
-               <h1 style="font-weight:bold;">13. Creator can liquidate only 2% of creator token in a month to ensure trust and stability of creator token's lquidity pool.</h1>
+               <h1 style="font-weight:bold;">15. Creator can liquidate only 2% of creator token in a month to ensure trust and stability of creator token's liquidity pool.</h1>
             </div>
          </div>
       </div>
