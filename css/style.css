@@ -80,17 +80,38 @@ h1 {
 }
 
 .GradientText {
-     font-weight: 600;
+     font-weight: 400;
      line-height: 1.15;
      background-image: linear-gradient(
- 255deg,#75fff8 25%,#00df4a);
+ 255deg,#00ff26 25%,white);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
      -webkit-text-stroke-width: .4px;
      -webkit-text-stroke-color: #fff;
      position: relative;
      z-index: 2;
-     font-size: 34px;
+     font-size: 20px;
+ }
+
+.BannerBackground {
+      font-weight: 600;
+      line-height: 1.15;
+      background-color: #00ff26;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: .4px;
+      -webkit-text-stroke-color: #fff;
+      position: relative;
+      z-index: 2;
+      font-size: 34px;
+  }
+
+ .headline-div{
+     background-color: black;
+     border-radius: 20px;
+     width: 80%;
+     margin-left: 10%;
+     margin-right: 10%;
  }
 
 h2 {
@@ -342,14 +363,14 @@ button {
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #38ffbd;
+     color: #4EC660;
 }
 
 .navigation.navbar-dark .navbar-nav .active>.nav-link,
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #38ffbd;
+     color: #4EC660;
 }
 
 
@@ -364,7 +385,7 @@ button {
 .header {
      background: black;
      width: 100%;
-     height: 8%;
+     /* height: 12%; */
      /* position: fixed; */
      /* z-index: 10; */
      /* top: -10; */
@@ -380,13 +401,14 @@ button {
 }
 
 .banner_main {
-     /* background: #0c0f38; */
-     background-image: url('../images/cryptoBack3.gif');
-     background-color: #cccccc;
+     /* background: #1B1B1B; */
+     /* background-image: url('../images/greenBlack2.gif'); */
+     background-color: #1B1B1B;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center center; 
-     padding-bottom: 2%;
+     height: 90%;
+     padding-bottom: 5%;
      padding-top: 10%;
 }
 
@@ -399,17 +421,15 @@ button {
 }
 
 .GradientBackground{
-     font-size: 20px;
-     font-weight: bold;
+     font-size: 20x;
      background-color: rgb(255, 0, 200);
      color: rgb(255, 255, 255);
-     padding: 10px 0px;
+     padding-left: 5px;
+     padding-right: 5px;
      width: 100%;
-     max-width: 190px;
+     height: 30px;
      text-align: center;
-     display: inline-block;
-     text-transform: uppercase;
-     border-radius:5%
+     border-radius:10%;
 }
 
 .GradientBackground:hover {
@@ -474,7 +494,7 @@ button {
 
 .titlepage h2 {
      font-size: 45px;
-     color: #0c0f38;
+     color: black;
      line-height: 40px;
      font-weight: bold;
      padding: 0;
@@ -496,7 +516,7 @@ button {
 }
 
 .web_hosting p {
-     color: #0c0f38;
+     color: black;
      font-size: 17px;
      line-height: 28px;
      padding: 40px 50px;
@@ -513,11 +533,10 @@ button {
      display: inline-block;
      text-transform: uppercase;
      font-weight: 400;
-     margin-top: 10px;
 }
 
 .web_hosting a:hover {
-     background-color: #0c0f38;
+     background-color: black;
      color: #fff;
 }
 
@@ -528,9 +547,8 @@ button {
 /** Services section **/
 
 .Services {
-     margin-top: 90px;
      padding: 60px 0;
-     background: #0c0f38;
+     background: #1B1B1B;
      font-family: Poppins;
 }
 
@@ -576,7 +594,6 @@ button {
      border: #cecfd7 solid 2px;
      padding: 40px;
      transition: ease-in all 0.5s;
-     margin-bottom: 30px;
 }
 
 .Services .Services-box:hover {
@@ -617,9 +634,11 @@ button {
 /** why section **/
 
 .why {
-     margin-top: 90px;
-     background: #ffff;
+     background: #1B1B1B;
      font-family: Poppins;
+     text-align: center;
+     padding-top: 30px;
+     padding-bottom: 30px;
 }
 
 .why .titlepage {
@@ -631,14 +650,23 @@ button {
 }
 
 .why .titlepage p {
-     color: #090808;
+     color: #fff;
 }
 
 .why .why-box h3 {
      padding: 20px 0px 20px 0px;
      font-size: 20px;
      line-height: 25px;
-     color: #090808;
+     color: #fff;
+     display: block;
+     font-weight: 500;
+}
+
+.why .why-box h4 {
+     padding: 20px 0px 20px 0px;
+     font-size: 20px;
+     line-height: 25px;
+     color: #fff;
      display: block;
      font-weight: 500;
 }
@@ -647,19 +675,88 @@ button {
      text-align: center;
      background-color: transparent;
      border-radius: 20px;
-     padding: 40px 20px 20px 20px;
+     padding: 20px 20px 20px 20px;
      transition: ease-in all 0.5s;
-     margin-bottom: 30px;
-     box-shadow: #ddd 0px 0px 10px
+     box-shadow: #ddd 1px 1px 10px
 }
 
 .why .why-box p {
      font-size: 16px;
      line-height: 24px;
-     color: #090808;
+     color: #fff;
 }
 
 .why .why-box:hover {
+     transition: ease-in all 0.1s;
+     transform: scale(1.1);
+}
+
+.why .why-text h3 {
+     padding: 20px 0px 20px 0px;
+     font-size: 20px;
+     line-height: 25px;
+     color: #fff;
+     display: block;
+     font-weight: 500;
+}
+
+.why .why-text h4 {
+     padding: 20px 0px 20px 0px;
+     font-size: 20px;
+     line-height: 25px;
+     color: #fff;
+     display: block;
+     font-weight: 500;
+}
+
+.why .why-text {
+     text-align: center;
+     background-color: transparent;
+     padding: 40px 20px 20px 20px;
+}
+
+.why .why-text p {
+     font-size: 16px;
+     line-height: 24px;
+     color: #fff;
+}
+
+
+.why .why-cryp h3 {
+     padding: 20px 0px 20px 0px;
+     font-size: 20px;
+     line-height: 25px;
+     color: rgb(0, 0, 0);
+     display: block;
+     font-weight: 500;
+}
+
+.why .why-cryp h4 {
+     padding: 20px 0px 20px 0px;
+     font-size: 20px;
+     line-height: 25px;
+     color: #fff;
+     display: block;
+     font-weight: 500;
+}
+
+.why .why-cryp {
+     text-align: center;
+     border-radius: 20px;
+     padding: 20px 20px 20px 20px;
+     transition: ease-in all 0.5s;
+     box-shadow: #ddd 1px 1px 10px;
+     background-color: white;
+     margin:8px;
+}
+
+.why .why-cryp p {
+     font-size: 16px;
+     line-height: 24px;
+     color: rgb(0, 0, 0);
+}
+
+.why .why-cryp:hover {
      transition: ease-in all 0.1s;
      transform: scale(1.1);
 }
@@ -690,12 +787,11 @@ button {
 /** contact section **/
 
 .contact {
-     padding-top: 90px;
      font-family: Poppins;
 }
 
 .main_form {
-     background: #0c0f38;
+     background: #1B1B1B;
      padding: 55px 55px;
      border-radius: 30px;
      margin-bottom: -58%;
@@ -704,7 +800,6 @@ button {
 .contact .main_form .contactus {
      border: #fff solid 1px;
      padding: 0px 19px;
-     margin-bottom: 20px;
      border-radius: 15px;
      width: 100%;
      height: 52px;
@@ -714,7 +809,6 @@ button {
 }
 
 .contact .main_form .textarea {
-     margin-bottom: 25px;
      padding: 0px 19px;
      color: #999999 !important;
      width: 100%;
@@ -813,7 +907,7 @@ button {
 
 .footer {
      font-family: Poppins;
-     background: #0c0f38;
+     background: #1B1B1B;
 }
 
 .cont {
@@ -863,7 +957,7 @@ button {
 }
 
 .copyright a:hover {
-     color: #0c0f38;
+     color: black;
 }
 
 .css-famcce {
