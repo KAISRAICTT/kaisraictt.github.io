@@ -107,7 +107,7 @@ h1 {
   }
 
  .headline-div{
-     background-color: black;
+     background-color: rgba(3, 3, 3, 0.7);
      border-radius: 20px;
      width: 80%;
      margin-left: 10%;
@@ -401,8 +401,8 @@ button {
 }
 
 .banner_main {
-     /* background: #1B1B1B; */
-     /* background-image: url('../images/greenBlack2.gif'); */
+     background: #1B1B1B;
+     background-image: url('../images/cryptoBack3.gif');
      background-color: #1B1B1B;
      background-size: cover;
      background-repeat: no-repeat;
